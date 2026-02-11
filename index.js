@@ -43,11 +43,14 @@ app.post("/login", async (req, res) => {
 
   if (!comparepassword) return res.json({ message: "invalid password" });
 
+  res.json({ message: "login successfull" });
+
 //   if (password === checkmail.password) {
 //     res.json({ message: "login successfull" });
 //   } else {
 //     res.json({ message: "invalid password" });
 //   }
+
 });
 app.listen(3000, () => {
   console.log("server is running..");
